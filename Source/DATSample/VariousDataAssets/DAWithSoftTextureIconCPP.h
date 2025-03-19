@@ -4,17 +4,15 @@
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
-#include "PotionAsset.generated.h"
+#include "DAWithSoftTextureIconCPP.generated.h"
 
 UCLASS(BlueprintType, Blueprintable)
-class DATSAMPLE_API UPotionAsset : public UDataAsset
+class DATSAMPLE_API UDAWithSoftTextureIconCPP : public UDataAsset
 {
 	GENERATED_BODY()
 
 public:
 
-#if WITH_EDITORONLY_DATA
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (Thumbnail))
-	TObjectPtr<class UTexture2D> Icon;
-#endif
+	TSoftObjectPtr<class UTexture2D> Icon;
 };

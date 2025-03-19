@@ -13,8 +13,6 @@ class DATSAMPLE_API UDAWithMaterialIconCPP : public UDataAsset
 
 public:
 
-#if WITH_EDITORONLY_DATA
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (Thumbnail))
 	TObjectPtr<class UMaterial> Icon;
-#endif
 };

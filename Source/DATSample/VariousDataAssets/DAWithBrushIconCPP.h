@@ -4,17 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
-#include "WeaponAsset.generated.h"
+#include "DAWithBrushIconCPP.generated.h"
 
 UCLASS(BlueprintType, Blueprintable)
-class DATSAMPLE_API UWeaponAsset : public UDataAsset
+class DATSAMPLE_API UDAWithBrushIconCPP : public UDataAsset
 {
 	GENERATED_BODY()
 
 public:
 
-#if WITH_EDITORONLY_DATA
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (Thumbnail))
-	TObjectPtr<class UTexture2D> Icon;
-#endif
+	FSlateBrush Icon;
 };
+
