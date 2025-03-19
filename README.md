@@ -3,8 +3,8 @@
 **Table of content:**
 - [What is DAT plugin?](#what-is-dat-plugin)
 - [Which assets can be used as a thumbnail?](#which-assets-can-be-used-as-a-thumbnail)
-- [How to set a variable to be an Data Assets' thumbnail?](#which-assets-can-be-used-as-a-thumbnail)
-- [How to set that variable using only BP?](#how-to-set-that-variable-using-only-BP)
+- [How to set a variable to be a Data Assets thumbnail?](#how-to-set-a-variable-to-be-a-data-assets-thumbnail)
+- [How to set that variable using only BP?](#how-to-set-that-variable-using-only-bp)
 - [What if I set multiple variables to be a thumbnail?](#what-if-i-set-multiple-variables-to-be-a-thumbnail)
 - [What if my thumbnail asset is inside of a struct?](#what-if-my-thumbnail-asset-is-inside-of-a-struct)
 - [How to setup default Data Assets color and icon?](#how-to-setup-default-data-assets-color-and-icon)
@@ -12,32 +12,25 @@
 
 ## What is DAT plugin?
 
-This plugin allows You to set a variable inside of the Data Asset to be used as a thumbnail of that Data Asset.  
-Very useful for games that have many items like weapons, armors, potions etc. described inside of Data Assets.  
-Unfortunatelly, vanila Unreal displays all Data Assets using the same icon, which with a lot of them became more difficult
-to quickly, visually find the asset you are interested with.  
-With this plugin you can set custom thumbnail using the same asset you use to display this asset in the gameplay.
-
+This plugin enhances the Content Browser by allowing you to set custom thumbnail images and colors for your Data Assets, making them easier to organize and identify.  
+It's ideal for games with hundreds or thousands of Data Assets like items, abilities, or weapons.  
+It helps to organize your assets visually.
   
 **Before Data Asset Thumbnails Plugin**  
-![noicons](https://github.com/user-attachments/assets/34304c28-e8e8-41cc-be4f-d9803fb22ab1)
+![prevplug](https://github.com/user-attachments/assets/33402349-039e-4464-b993-8985539842fe)
 
 **After Data Assets Thumbnails Plugin**  
-![icons](https://github.com/user-attachments/assets/6e039af2-75b7-454d-aad4-f44e6c03fb07)
+![afterplug](https://github.com/user-attachments/assets/0ab33713-d906-4003-95d9-b9b4e04fa55a)
   
-You can also setup different colors for specific Data Asset types and default thumbnails if none is setup:
-
-![deficons](https://github.com/user-attachments/assets/f53f0497-dd84-473c-9c4c-8a4839de0a06)
-
 ## Which assets can be used as a thumbnail?
 
 * `UTexture2D` hard and soft reference
 * Any `UMaterialInterface` child (`UMaterial`, `UMaterialInstance`, etc) hard and soft referece
 * `FSlateBrush`
 
-## How to set a variable to be an Data Assets' thumbnail?  
+## How to set a variable to be a Data Assets thumbnail?  
 
-Simply add `Thumbnail` metadata to the property used to be a thumbnail.
+Simply add `Thumbnail` meta tag to the property you want to use as a thumbnail.
 
 ```cpp
 #pragma once
@@ -68,7 +61,7 @@ If you define a variable inside of the `PrimaryDataAsset` and it is one of the s
 The first one found will be used as a thumbnail.  
 
 ## What if my thumbnail asset is inside of a struct?  
-Unfortunatelly we can't set meta data inside of a struct, but there is a second way of defining which asset should be used as a thumbnail and this is by using `IDataAssetWithThumbnail` and by overriding `GetAssetToRender_Implementation` function.
+Unfortunatelly we can't set meta tag inside of a struct, but there is a second way of defining which asset should be used as a thumbnail and this is by using `IDataAssetWithThumbnail` and by overriding `GetAssetToRender_Implementation` function.
 
 ```cpp
 #pragma once
@@ -108,20 +101,21 @@ public:
 
 Yes it will!
 
-![iconstructbp](https://github.com/user-attachments/assets/054e4c15-842e-46c9-a673-6eb28bddc304)
+![interface](https://github.com/user-attachments/assets/b49b0948-0e72-4b31-8411-55ece09130f2)
 
 ## How to setup default Data Assets color and icon?  
 
-![defvalues](https://github.com/user-attachments/assets/0f6589d6-e27d-4013-b7ac-53b9dd4f851e)
+Go to `Project Settings -> Plugins -> Data Assets Thumbnails` and fill up the `Global Overrides`
 
-![defs](https://github.com/user-attachments/assets/106c63fa-f22d-4109-bdcd-adb0c4f9cdb0)  
+![settings](https://github.com/user-attachments/assets/11150854-2931-4b45-b197-2c4a61d97cb1)
 
+![deficonsshowcase](https://github.com/user-attachments/assets/237c725a-fbf2-4e94-a5b9-ba96c93b3d3d)
 
 ## What if thumbnail don't want to change?  
 
 Remember that in order to render a thumbnail an asset must be saved and compiled. Sometimes you need to go out from a directory and enter again.  
-If everything fails, you can try to refresh a thumbnail, by right clicking the asset and selecting `Asset Actions -> Refresh Thumbnails`. You can also refresh multiple thumbnails  
-by right-click on a directory and select `Refresh Thumbnails`.  
+If everything fails, you can try to refresh a thumbnail, by right clicking the asset and selecting `Asset Actions -> Refresh Thumbnails`.  
+You can also refresh multiple thumbnails by right-click on a directory and select `Refresh Thumbnails`.  
 
 ![image](https://github.com/user-attachments/assets/68c3146b-8682-4945-81d8-6391142f6ab4) ![refrall](https://github.com/user-attachments/assets/793f7df5-aeea-4593-8234-5340f6c329ab)  
 
