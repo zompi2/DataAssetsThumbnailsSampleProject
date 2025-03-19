@@ -2,6 +2,7 @@
 
 **Table of content:**
 - [What is DAT plugin?](#what-is-dat-plugin)
+- [Where can I get this plugin?](#where-can-i-get-this-plugin)
 - [Which assets can be used as a thumbnail?](#which-assets-can-be-used-as-a-thumbnail)
 - [How to set a variable to be a Data Assets thumbnail?](#how-to-set-a-variable-to-be-a-data-assets-thumbnail)
 - [How to set that variable using only BP?](#how-to-set-that-variable-using-only-bp)
@@ -9,6 +10,7 @@
 - [What if my thumbnail asset is inside of a struct?](#what-if-my-thumbnail-asset-is-inside-of-a-struct)
 - [How to setup default Data Assets color and icon?](#how-to-setup-default-data-assets-color-and-icon)
 - [What if thumbnail don't want to change?](#what-if-thumbnail-dont-want-to-change)
+- [Support](#support)
 
 ## What is DAT plugin?
 
@@ -22,6 +24,10 @@ It helps to organize your assets visually.
 **After Data Assets Thumbnails Plugin**  
 ![afterplug](https://github.com/user-attachments/assets/0ab33713-d906-4003-95d9-b9b4e04fa55a)
   
+## Where can I get this plugin?  
+
+From Fab: [https://www.fab.com/portal/listings/345076ad-bb32-4e08-a2f6-c92361b12231](https://www.fab.com/portal/listings/345076ad-bb32-4e08-a2f6-c92361b12231)
+
 ## Which assets can be used as a thumbnail?
 
 * `UTexture2D` hard and soft reference
@@ -119,7 +125,6 @@ You can also refresh multiple thumbnails by right-click on a directory and selec
 
 ![image](https://github.com/user-attachments/assets/68c3146b-8682-4945-81d8-6391142f6ab4) ![refrall](https://github.com/user-attachments/assets/793f7df5-aeea-4593-8234-5340f6c329ab)  
 
+## Support  
 
-
-
-
+If you have any questions regarding this plugin, please create a pull request in this repository, or ask via e-mail: zompi2@gmail.com 
