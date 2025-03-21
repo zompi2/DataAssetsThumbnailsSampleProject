@@ -26,7 +26,7 @@ It helps to organize your assets visually.
   
 ## Where can I get this plugin?  
 
-From Fab: [https://www.fab.com/portal/listings/345076ad-bb32-4e08-a2f6-c92361b12231](https://www.fab.com/portal/listings/345076ad-bb32-4e08-a2f6-c92361b12231)
+From Fab: https://www.fab.com/listings/239dd3f5-602e-4453-b161-c06191659335
 
 ## Which assets can be used as a thumbnail?
 
