@@ -3,6 +3,7 @@
 **Table of content:**
 - [What is DAT plugin?](#what-is-dat-plugin)
 - [Where can I get this plugin?](#where-can-i-get-this-plugin)
+- [Where can I see it in action?](#where-can-i-see-it-in-action)
 - [How can I get support?](#how-can-i-get-support)
 - [Which assets can be used as a thumbnail?](#which-assets-can-be-used-as-a-thumbnail)
 - [How to set a variable to be a Data Assets thumbnail?](#how-to-set-a-variable-to-be-a-data-assets-thumbnail)
@@ -28,6 +29,10 @@ It helps to organize your assets visually.
 ## Where can I get this plugin?  
 
 From Fab: https://www.fab.com/listings/239dd3f5-602e-4453-b161-c06191659335
+
+## Where can I see it in action?  
+
+On YouTube: https://www.youtube.com/watch?v=qIrqWKTJ_nE
 
 ## How can I get support?  
 
