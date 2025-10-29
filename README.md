@@ -11,6 +11,7 @@
 - [What if my thumbnail asset is inside of a struct?](#what-if-my-thumbnail-asset-is-inside-of-a-struct)
 - [How to setup default Data Assets color and icon?](#how-to-setup-default-data-assets-color-and-icon)
 - [What if thumbnail don't want to change?](#what-if-thumbnail-dont-want-to-change)
+- [What is inside of the sample project?](#what-is-inside-the-sample-project)
 - [How can I get support?](#how-can-i-get-support)
 - [Special thanks](#special-thanks)
 
@@ -130,6 +131,17 @@ If everything fails, you can try to refresh a thumbnail, by right clicking the a
 You can also refresh multiple thumbnails by right-click on a directory and select `Refresh Thumbnails`.  
 
 ![image](https://github.com/user-attachments/assets/68c3146b-8682-4945-81d8-6391142f6ab4) ![refrall](https://github.com/user-attachments/assets/793f7df5-aeea-4593-8234-5340f6c329ab)  
+
+## What is inside the sample project?
+
+Sample project contains the c++ and BP definitions of various DataAssets that shows the implementation of DataAssetThumbnails.  
+* `Source/DATSample/DACPPDefinitions` - c++ DataAsset definitions with thumbnail properties as SlateBrush, Material, Texture, Struct, Soft Material and Soft Texture.
+* `Source/DATSample/GameDADefinitions` - c++ DataAsset definitions of game-like data assets - Boot, Shield, Spell, all heving Texture as a thumbnail property.
+* `Content/IconTextures` - textures and materials used for the demo
+* `Content/GameAssets` - DataAssets based on `GameDADDefinitions`. They also have the DataAsset color and default icon setup in config.
+* `Content/VariousDataAssets/BP/Definitions` - BP DataAsset definitions with thumbnail properties as SlateBrush, Material, Texture, Struct, Soft Material and Soft Texture.
+* `Content/VariousDataAssets/BP/Assets` - DataAssets based on the `.../BP/Definitions`
+* `Content/VariousDataAssets/CPP` - DataAssets based on the `DACPPDefinitions`
 
 ## How can I get support?  
 
