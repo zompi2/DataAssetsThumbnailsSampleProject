@@ -11,6 +11,7 @@
 - [What if my thumbnail asset is inside of a struct?](#what-if-my-thumbnail-asset-is-inside-of-a-struct)
 - [How to setup default Data Assets color and icon?](#how-to-setup-default-data-assets-color-and-icon)
 - [What if thumbnail don't want to change?](#what-if-thumbnail-dont-want-to-change)
+- [My icons have transparency and are barely visible](#my-icons-have-transparency-and-are-barely-visible)
 - [What is inside of the sample project?](#what-is-inside-the-sample-project)
 - [How can I get support?](#how-can-i-get-support)
 - [Special thanks](#special-thanks)
@@ -131,6 +132,16 @@ If everything fails, you can try to refresh a thumbnail, by right clicking the a
 You can also refresh multiple thumbnails by right-click on a directory and select `Refresh Thumbnails`.  
 
 ![image](https://github.com/user-attachments/assets/68c3146b-8682-4945-81d8-6391142f6ab4) ![refrall](https://github.com/user-attachments/assets/793f7df5-aeea-4593-8234-5340f6c329ab)  
+
+## My icons have transparency and are barely visible
+
+You can draw your icons with transparency on a solid color background, instead on the default checkerboard.  
+You can enable that feature in `Project Settings -> Plugins -> Data Assets Thumbnails` with `Use Solid Color on Translucent Icons` option.  
+You can also specify different colors for different Data Asset types in `Global Overrides` settings.  
+
+![solidc](https://github.com/user-attachments/assets/d6910183-eaa8-4392-9948-04b7818d35b2)
+
+![dapot](https://github.com/user-attachments/assets/0a23b637-9499-40a2-8ef8-d7c891caf7e2)
 
 ## What is inside the sample project?
 
