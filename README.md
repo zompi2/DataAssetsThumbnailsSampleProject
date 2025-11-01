@@ -140,6 +140,7 @@ You can also refresh multiple thumbnails by right-click on a directory and selec
 You can draw your icons with transparency on a solid color background, instead on the default checkerboard.  
 You can enable that feature in `Project Settings -> Plugins -> Data Assets Thumbnails` with `Solid Background on Translucent Icons` option.  
 You can also specify different colors for different Data Asset types in `Global Overrides` settings.  
+> After changing these settings you will have to refresh your thumbnails.
 
 ![solidc](https://github.com/user-attachments/assets/ac0e9edc-974a-4e7d-8dad-9cbb01d0781c)
 
