@@ -133,7 +133,10 @@ Remember that in order to render a thumbnail an asset must be saved and compiled
 If everything fails, you can try to refresh a thumbnail, by right clicking the asset and selecting `Asset Actions -> Refresh Thumbnails`.  
 You can also refresh multiple thumbnails by right-click on a directory and select `Refresh Thumbnails`.  
 
-![image](https://github.com/user-attachments/assets/68c3146b-8682-4945-81d8-6391142f6ab4) ![refrall](https://github.com/user-attachments/assets/793f7df5-aeea-4593-8234-5340f6c329ab)  
+![refre1](https://github.com/user-attachments/assets/a57d6148-bd68-4213-8d97-2055d256b7af)  
+
+
+![refr2](https://github.com/user-attachments/assets/dd552a3f-a390-4ee4-ae64-695b9b48d416) 
 
 ## My icons have transparency and are barely visible
 
