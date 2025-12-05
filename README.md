@@ -170,4 +170,5 @@ However, if you have any questions or bug reports you can:
 
 ## Special thanks 
 
-I want to say thanks to Monika, for everlasting support and that she always believes in me, and to Patrick, for always encouraging me to get my shit done :)
+I want to say thanks to Monika, for everlasting support and that she always believes in me, and to Patrick, for always encouraging me to get my shit done :)  
+Also, thanks to everybody who purchased the product and who provided valuable feedback. You rock! <3
