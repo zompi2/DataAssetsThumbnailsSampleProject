@@ -123,7 +123,7 @@ Yes it will!
 
 Go to `Project Settings -> Plugins -> Data Assets Thumbnails` and fill up the `Global Overrides`
 
-![settings](https://github.com/user-attachments/assets/11150854-2931-4b45-b197-2c4a61d97cb1)
+![settings](https://github.com/user-attachments/assets/43ef76e4-bc0c-486f-81e7-21e66e129fa7)
 
 ![deficonsshowcase](https://github.com/user-attachments/assets/237c725a-fbf2-4e94-a5b9-ba96c93b3d3d)
 
