@@ -171,9 +171,15 @@ public:
 
 Go to `Project Settings -> Plugins -> Data Assets Thumbnails` and fill up the `Global Overrides`
 
-![settings](https://github.com/user-attachments/assets/43ef76e4-bc0c-486f-81e7-21e66e129fa7)
+<img width="979" height="695" alt="obraz" src="https://github.com/user-attachments/assets/c2841372-c655-40bc-baca-79fdde755da1" />
 
 ![deficonsshowcase](https://github.com/user-attachments/assets/237c725a-fbf2-4e94-a5b9-ba96c93b3d3d)
+
+## Can I have that default icon always displayed on top of my Data Assets?
+
+Sure! Just enable the `Use Icon as Corner Icon` in the `Global Overrides`
+
+<img width="842" height="696" alt="obraz" src="https://github.com/user-attachments/assets/76263d62-f340-40e8-afc2-a29571b6634b" />
 
 ## What if thumbnail don't want to change?  
 
