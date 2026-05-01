@@ -72,6 +72,7 @@ If you define a variable inside of the `PrimaryDataAsset` and it is one of the s
 * `UTexture2D` hard and soft reference
 * Any `UMaterialInterface` child (`UMaterial`, `UMaterialInstance`, etc) hard and soft referece
 * `FSlateBrush`
+* `FColor` and `FLinearColor`
 
 ## What if I set multiple variables to be a thumbnail?  
 The first one found will be used as a thumbnail.  
@@ -118,6 +119,53 @@ public:
 Yes it will!
 
 ![interface](https://github.com/user-attachments/assets/b49b0948-0e72-4b31-8411-55ece09130f2)
+
+**How about FLinearColor?**
+
+For `FColor` and `FLinearColor` another functions must be overriden: `VisualizeWithSolidColor` and `GetColorToRender`.
+
+```cpp
+#pragma once
+
+#include "Engine/DataAsset.h"
+#include "IDataAssetWithThumbnail.h"
+#include "DATUtils.h"
+#include "MyDataAsset.generated.h"
+
+USTRUCT(BlueprintType)
+struct FColorStruct
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FLinearColor LinearColor;
+};
+
+UCLASS(BlueprintType, Blueprintable)
+class MYPROJECT_API UMyDataAsset : public UDataAsset, public IDataAssetWithThumbnail
+{
+	GENERATED_BODY()
+
+public:
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FColorStruct ColorStruct;
+
+	bool VisualizeWithSolidColor_Implementation() const override
+	{
+		return true;
+	}
+
+	FLinearColor GetColorToRender_Implementation() const override
+	{
+		return ColorStruct.LinearColor;
+	}
+};
+```
+
+**And in BP**
+<img width="522" height="183" alt="obraz" src="https://github.com/user-attachments/assets/7cf53e92-75a4-4093-9074-dc01beb11948" />
+<img width="688" height="262" alt="obraz" src="https://github.com/user-attachments/assets/d6eba720-3a0f-4b2b-8e59-3f3d7c1830ca" />
 
 ## How to setup default Data Assets color and icon?  
 
