@@ -4,15 +4,15 @@
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
-#include "DAWithTextureIconCPP.generated.h"
+#include "DAWithColorCPP.generated.h"
 
 UCLASS(BlueprintType, Blueprintable)
-class DATSAMPLE_API UDAWithTextureIconCPP : public UDataAsset
+class DATSAMPLE_API UDAWithColorCPP: public UDataAsset
 {
 	GENERATED_BODY()
 
 public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (Thumbnail))
-	TObjectPtr<class UTexture2D> Icon;
+	FColor Color;
 };

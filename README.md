@@ -72,6 +72,7 @@ If you define a variable inside of the `PrimaryDataAsset` and it is one of the s
 * `UTexture2D` hard and soft reference
 * Any `UMaterialInterface` child (`UMaterial`, `UMaterialInstance`, etc) hard and soft referece
 * `FSlateBrush`
+* `FColor` and `FLinearColor`
 
 ## What if I set multiple variables to be a thumbnail?  
 The first one found will be used as a thumbnail.  
@@ -119,13 +120,66 @@ Yes it will!
 
 ![interface](https://github.com/user-attachments/assets/b49b0948-0e72-4b31-8411-55ece09130f2)
 
+**How about FLinearColor?**
+
+For `FColor` and `FLinearColor` another functions must be overriden: `VisualizeWithSolidColor` and `GetColorToRender`.
+
+```cpp
+#pragma once
+
+#include "Engine/DataAsset.h"
+#include "IDataAssetWithThumbnail.h"
+#include "DATUtils.h"
+#include "MyDataAsset.generated.h"
+
+USTRUCT(BlueprintType)
+struct FColorStruct
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FLinearColor LinearColor;
+};
+
+UCLASS(BlueprintType, Blueprintable)
+class MYPROJECT_API UMyDataAsset : public UDataAsset, public IDataAssetWithThumbnail
+{
+	GENERATED_BODY()
+
+public:
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FColorStruct ColorStruct;
+
+	bool VisualizeWithSolidColor_Implementation() const override
+	{
+		return true;
+	}
+
+	FLinearColor GetColorToRender_Implementation() const override
+	{
+		return ColorStruct.LinearColor;
+	}
+};
+```
+
+**And in BP**
+<img width="522" height="183" alt="obraz" src="https://github.com/user-attachments/assets/7cf53e92-75a4-4093-9074-dc01beb11948" />
+<img width="688" height="262" alt="obraz" src="https://github.com/user-attachments/assets/d6eba720-3a0f-4b2b-8e59-3f3d7c1830ca" />
+
 ## How to setup default Data Assets color and icon?  
 
 Go to `Project Settings -> Plugins -> Data Assets Thumbnails` and fill up the `Global Overrides`
 
-![settings](https://github.com/user-attachments/assets/43ef76e4-bc0c-486f-81e7-21e66e129fa7)
+<img width="979" height="695" alt="obraz" src="https://github.com/user-attachments/assets/c2841372-c655-40bc-baca-79fdde755da1" />
 
 ![deficonsshowcase](https://github.com/user-attachments/assets/237c725a-fbf2-4e94-a5b9-ba96c93b3d3d)
+
+## Can I have that default icon always displayed on top of my Data Assets?
+
+Sure! Just enable the `Use Icon as Corner Icon` in the `Global Overrides`
+
+<img width="842" height="696" alt="obraz" src="https://github.com/user-attachments/assets/76263d62-f340-40e8-afc2-a29571b6634b" />
 
 ## What if thumbnail don't want to change?  
 
