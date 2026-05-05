@@ -1,6 +1,6 @@
 # Data Assets Thumbnails for Unreal Engine
 
-> This is documentation for the newest version of the plugin (1.2.0). For older versions check other branches.
+> This is documentation for the newest version of the plugin (1.2.1). For older versions check other branches.
 
 **Table of content:**
 - [What is DAT plugin?](#what-is-dat-plugin)
