@@ -1,3 +1,6 @@
+1.2.1 - 04.05.2026
+* Fixed the SolidBackgroundOnTranslucentIcons setting. The global setting is applied to every icon now.
+
 1.2.0 - 01.05.2026
 * Allow to set FColor and FLinearColor to be an Data Asset thumbnail
 * Data Asset type default icon can be displayed in the top left corner of the Data Asset icon
