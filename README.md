@@ -12,6 +12,7 @@
 - [What if I set multiple variables to be a thumbnail?](#what-if-i-set-multiple-variables-to-be-a-thumbnail)
 - [What if my thumbnail asset is inside of a struct?](#what-if-my-thumbnail-asset-is-inside-of-a-struct)
 - [How to setup default Data Assets color and icon?](#how-to-setup-default-data-assets-color-and-icon)
+- [Can I have that default icon always displayed in the corner of my Data Assets?](#can-i-have-that-default-icon-always-displayed-in-the-corner-of-my-data-assets)
 - [What if thumbnail don't want to change?](#what-if-thumbnail-dont-want-to-change)
 - [My icons have transparency and are barely visible](#my-icons-have-transparency-and-are-barely-visible)
 - [What is inside of the sample project?](#what-is-inside-the-sample-project)
@@ -175,11 +176,11 @@ Go to `Project Settings -> Plugins -> Data Assets Thumbnails` and fill up the `G
 
 ![deficonsshowcase](https://github.com/user-attachments/assets/237c725a-fbf2-4e94-a5b9-ba96c93b3d3d)
 
-## Can I have that default icon always displayed on top of my Data Assets?
+## Can I have that default icon always displayed in the corner of my Data Assets?
 
 Sure! Just enable the `Use Icon as Corner Icon` in the `Global Overrides`
 
-<img width="842" height="696" alt="obraz" src="https://github.com/user-attachments/assets/76263d62-f340-40e8-afc2-a29571b6634b" />
+<img width="674" height="713" alt="datsmallicons" src="https://github.com/user-attachments/assets/e725ed1e-3d9a-483a-9c5a-12d4157da504" />
 
 ## What if thumbnail don't want to change?  
 
