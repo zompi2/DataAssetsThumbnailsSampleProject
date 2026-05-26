@@ -1,3 +1,8 @@
+1.2.2 - 26.05.2026
+* Using AssetStatusInfo instead of ThumbnailActionOverlay to display asset type icon for the UE5.6 and newer.
+* Asset type icons are displayed at the bottom left corner instead of the top left corner now.
+* Fixed compilation error for UE5.8.
+
 1.2.1 - 04.05.2026
 * Fixed the SolidBackgroundOnTranslucentIcons setting. The global setting is applied to every icon now.
 
